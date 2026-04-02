@@ -7,10 +7,10 @@
 
   <div class="title">
     <h2>Manejo del <br /> <span>Instinto</span></h2>
-    <h6>
+    <h4>
       Infraestructura ganadera que entiende al animal. Sin adornos, solo acero
       forjado en la montaña.
-    </h6>
+    </h4>
   </div>
 </div>
 
@@ -33,6 +33,7 @@
     top: 0;
     left: 0;
     z-index: -1;
+    filter: blur(1px);
   }
 
   .title {
@@ -40,7 +41,7 @@
     grid-row: 2/3;
 
     h2 {
-      font-size: 6em;
+      font-size: 6rem;
       font-family: Newsreader;
       color: var(--bg);
       margin: 0;
@@ -49,16 +50,28 @@
       color: var(--yellow);
     }
 
-    h6 {
+    h4 {
       margin: 0;
       display: block;
-      width: 400px;
-      font-size: 1em;
-      font-family: sans-serif;
+      max-width: 400px;
+      font-size: 1rem;
       color: var(--bg);
 
       border-left: 3px solid var(--yellow);
+      border-bottom: 3px solid var(--yellow);
       padding-left: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  @media (width <= 40rem) {
+    .hero {
+      grid-template-columns: auto;
+      text-align: center;
+    }
+
+    :root {
+      font-size: .8em;
     }
   }
 </style>
