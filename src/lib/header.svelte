@@ -19,6 +19,10 @@
     <a href="#catalogo">Catalogo</a>
     <a href="#contacto">Contacto</a>
     <a href="tel:+34">Llamanos</a>
+
+    <div id="cancillas"></div>
+    <div id="catalogo"></div>
+    <div id="contacto"></div>
   </nav>
 </header>
 
