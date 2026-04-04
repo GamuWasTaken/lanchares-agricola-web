@@ -5,48 +5,44 @@
 </script>
 
 <header>
-  <div class="logo">
+  <div>
     <img src={logoImg} alt="" />
 
-    <span>
+    <hgroup>
       <h3>Lanchares</h3>
       <p>Agricola S.L.</p>
-    </span>
+    </hgroup>
   </div>
 
   <nav>
-    <a href="#cancillas">Cancillas</a>
-    <a href="#catalogo">Catalogo</a>
-    <a href="#contacto">Contacto</a>
-    <a href="tel:+34">Llamanos</a>
-
-    <div id="cancillas"></div>
-    <div id="catalogo"></div>
-    <div id="contacto"></div>
+    <a href=".">Catalogo</a>
+    <a href=".">Contacto</a>
   </nav>
 </header>
 
 <style>
   header {
     position: sticky;
+    z-index: 1;
     top: 0;
     height: 60px;
     background-color: var(--bg);
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    padding: 0 10px;
-    z-index: 1;
+    padding: 0 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    .logo {
+    div {
       display: flex;
       align-items: center;
       gap: 5px;
 
       img {
         height: 50px;
-        border: none;
       }
-      span {
+
+      hgroup {
+        display: none;
         h3 {
           font-weight: bold;
           color: var(--red);
@@ -58,11 +54,10 @@
         }
       }
     }
+
     nav {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      grid-column: 3/4;
+      flex-direction: row;
 
       a {
         display: block;
@@ -76,9 +71,17 @@
     }
   }
 
-  @media (width <= 48rem) {
-    h3 {
-      display: none;
+  @media (width >=  40rem) {
+    header div hgroup {
+      display: block;
     }
+  }
+  @media (width >=  48rem) {
+  }
+  @media (width >=  64rem) {
+  }
+  @media (width >=  80rem) {
+  }
+  @media (width >=  96rem) {
   }
 </style>

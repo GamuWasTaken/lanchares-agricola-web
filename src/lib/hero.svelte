@@ -5,73 +5,74 @@
 <div class="hero" style:--bgimg={`url(${heroImg})`}>
   <img src={heroImg} alt="" />
 
-  <div class="title">
+  <hgroup>
     <h2>Manejo del <br /> <span>Instinto</span></h2>
-    <h4>
+    <p>
       Infraestructura ganadera que entiende al animal. Sin adornos, solo acero
       forjado en la montaña.
-    </h4>
-  </div>
+    </p>
+  </hgroup>
 </div>
 
 <style>
   .hero {
     height: 100vh;
     position: relative;
-    display: grid;
-    grid-template-columns: 100px auto 1fr;
-    grid-template-rows: 1fr auto 100px;
     background: linear-gradient(15deg, rgba(0, 0, 0, 0.9), transparent);
-  }
 
-  img {
-    position: absolute;
-    object-fit: cover;
-    object-position: right top;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    filter: blur(1px);
-  }
-
-  .title {
-    grid-column: 2/3;
-    grid-row: 2/3;
-
-    h2 {
-      font-size: 6rem;
-      font-family: Newsreader;
-      color: var(--bg);
-      margin: 0;
-    }
-    h2 span {
-      color: var(--yellow);
+    img {
+      position: absolute;
+      object-fit: cover;
+      object-position: right top;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      filter: blur(1px);
     }
 
-    h4 {
-      margin: 0;
-      display: block;
-      max-width: 400px;
-      font-size: 1rem;
-      color: var(--bg);
+    hgroup {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      position: absolute;
+      bottom: 7vw;
+      left: 7vw;
 
-      border-left: 3px solid var(--yellow);
-      border-bottom: 3px solid var(--yellow);
-      padding-left: 10px;
-      padding-bottom: 10px;
-    }
-  }
+      h2 {
+        font-size: 4rem;
+        font-family: Newsreader;
+        color: var(--bg);
+        margin: 0;
 
-  @media (width <= 40rem) {
-    .hero {
-      grid-template-columns: auto;
-      text-align: center;
-    }
+        span {
+          color: var(--yellow);
+        }
+      }
 
-    :root {
-      font-size: .8em;
+      p {
+        margin: 0;
+        display: block;
+        max-width: min(80vw, 500px);
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--bg);
+
+        border-left: 3px solid var(--yellow);
+        padding-left: 10px;
+      }
     }
   }
+
+  @media (width >= 48rem) {
+    .hero hgroup {
+      h2 {
+        font-size: 6rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
 </style>
