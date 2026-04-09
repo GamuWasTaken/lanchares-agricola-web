@@ -1,5 +1,5 @@
 <script lang="ts">
-  import logoImg from "$lib/assets/cowlogo.png";
+  import logoImg from "$lib/assets/cowlogo.svg";
   // 608 963851 // 653 773928 // 638 222326 // 942 778333 // 942778471
   // oficina@jcdsestructuras.com
 </script>
