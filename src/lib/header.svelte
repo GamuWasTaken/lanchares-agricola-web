@@ -16,7 +16,7 @@
 
   <nav>
     <a href=".">Catalogo</a>
-    <a href=".">Contacto</a>
+    <a href="tlf:+34722265729">Contacto</a>
   </nav>
 </header>
 

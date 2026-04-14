@@ -12,7 +12,7 @@
       su ganado.
     </p>
 
-    <a href="tlf:+34"> Llamanos </a>
+    <a href="tlf:+34722265729"> Llamanos </a>
   </div>
 
   <figure>
