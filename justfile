@@ -4,6 +4,3 @@ init:
 
 run:
     bun run dev --open
-
-split:
-    alacritty & disown

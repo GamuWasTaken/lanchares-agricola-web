@@ -1,9 +1,9 @@
 <script>
-  import ctaImg from "$lib/assets/1045.jpg";
+  import ctaImg from "$lib/assets/nieve.webp";
 </script>
 
 <section>
-  <div>
+  <hgroup>
     <h2>Cancilla a la carta</h2>
 
     <p>
@@ -13,11 +13,11 @@
     </p>
 
     <a href="tlf:+34722265729"> Llamanos </a>
-  </div>
+  </hgroup>
 
   <figure>
     <img src={ctaImg} alt="" />
-    <figcaption>&ldquo;Acero que aguanta el invierno&rdquo;</figcaption>
+    <figcaption>Acero que aguanta el invierno</figcaption>
   </figure>
 </section>
 
@@ -26,23 +26,17 @@
     display: flex;
     position: relative;
     margin: 0 auto;
-    max-width: 80rem;
     height: 400px;
-    background: linear-gradient(125deg, rgba(0, 0, 0, 0.8), transparent);
 
-    div {
+    hgroup {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-self: center;
       padding: 20px;
       height: 100%;
-      box-sizing: border-box;
 
-      h2 {
-        font-size: 2.5em;
-        color: white;
-      }
+      background: linear-gradient(-90deg, transparent, rgba(0, 0, 0, 0.8));
 
       p {
         color: var(--bg);
@@ -68,14 +62,14 @@
       width: 100%;
       margin: 0;
       z-index: -1;
-      top:0;
-      left:0;
+      top: 0;
+      left: 0;
+      filter: brightness(.8);
 
       img {
         object-fit: cover;
         width: inherit;
         height: inherit;
-        filter: brightness(.8);
       }
 
       figcaption {
@@ -85,7 +79,7 @@
         right: 0;
         background-color: var(--red);
         padding: 15px;
-        font-size: .7em;
+        font-size: 0.7em;
         font-weight: bold;
         color: var(--bg);
         margin: 0;
@@ -96,13 +90,17 @@
   @media (width >= 40rem) {
     section figure {
       position: relative;
+      z-index: 0;
+      filter: none;
     }
-
-  }
-  @media (width >= 48rem) {
+    section hgroup {
+      background: none;
+    }
     section figure figcaption {
       display: block;
     }
+  }
+  @media (width >= 48rem) {
   }
   @media (width >= 64rem) {
   }

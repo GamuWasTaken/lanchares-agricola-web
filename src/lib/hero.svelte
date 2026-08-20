@@ -1,8 +1,8 @@
 <script lang="ts">
-  import heroImg from "$lib/assets/1237.jpg";
+  import heroImg from "$lib/assets/1237.webp";
 </script>
 
-<div class="hero" style:--bgimg={`url(${heroImg})`}>
+<section>
   <img src={heroImg} alt="" />
 
   <hgroup>
@@ -12,11 +12,12 @@
       forjado en la montaña.
     </p>
   </hgroup>
-</div>
+</section>
 
 <style>
-  .hero {
+  section {
     height: 100vh;
+    width: 100%;
     position: relative;
     background: linear-gradient(15deg, rgba(0, 0, 0, 0.9), transparent);
 
@@ -65,7 +66,7 @@
   }
 
   @media (width >= 48rem) {
-    .hero hgroup {
+    section hgroup {
       h2 {
         font-size: 6rem;
       }
