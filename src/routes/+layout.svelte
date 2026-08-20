@@ -1,6 +1,6 @@
 <script lang="ts">
 	import favicon from "$lib/assets/favicon.svg";
-	import image from "$lib/assets/1237.webp";
+	import image from "$lib/assets/logo.png";
 
 	let { children } = $props();
 
